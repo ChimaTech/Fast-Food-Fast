@@ -132,6 +132,8 @@ function checkFunc(event) {
   let foodPriceString = event.target.parentNode.parentNode.querySelector('figcaption').getAttribute('class');
   let foodPrice = Number( foodPriceString );
 
+  comment.innerHTML = '<span class="green"> Your have not selected any food item yet</span>';
+
 
 
   let input = event.target;
