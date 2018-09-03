@@ -1,0 +1,309 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+  padding: 0;
+  margin: 0;
+  background-color: #e8e8e8;
+  -webkit-font-smoothing: antialiased;
+}
+
+
+/* Global */
+.container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+label{
+  font-weight: bold;
+  text-align: center;
+}
+
+.comment {
+  font-style: italic;
+  color: #454545;
+}
+
+.red {
+  color: #ff0f0f;
+}
+
+
+/* Header */
+header {
+  background: #16397a;
+  padding-top: 30px;
+  color: #fff;
+  min-height: 70px;
+}
+
+header #branding, header #branding a {
+  font-family: cursive, Arial, Helvetica, sans-serif;
+  color: #fff;
+  float: left;
+  text-decoration: none;
+}
+
+header #branding h1 {
+  margin: 0;
+}
+
+header h1 .fast, header h1 .exclaim {
+  color: #f0b400;
+}
+
+header h1 .exclaim {
+  font-family: calibri;
+  font-size: 1.5em;
+  font-style: italic;
+}
+
+header nav a {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+header li {
+  float: left;
+  display: inline;
+  padding: 0 20px 0 20px;
+}
+
+
+/* Navigation */
+nav {
+  float: right;
+  margin-top: 45px;
+}
+
+nav ul li.right-border {
+  border-right: 1px solid #757575;
+}
+
+nav ul li#current {
+  border-bottom: 3px solid #f0b400;
+  font-weight: bold;
+}
+
+nav ul li {
+  transition: background-color 0.3s, border 0.3s, color 0.3s;  /* transition times between specified properties when mouse hovers over a nav link */
+}
+
+nav ul li:hover {
+  font-weight: bold;
+}
+
+
+/* Showcase */
+#showcase {
+  min-height: 400px;
+  background-image: url('../img/showcase-4.jpg');
+  background-size: cover;
+  text-align: center;
+  color: #fff;
+
+}
+
+#showcase h1 {
+  margin-top: 100px;
+  font-size: 55px;
+  margin-bottom: 10px;
+}
+
+#showcase p {
+  font-size: 20px;
+}
+
+
+/* Login-Form */
+#login {
+  text-align: center;
+  margin-top: 0;
+}
+
+#login form {
+  border-radius: 30px;
+  background-color: #fff;
+  /* width: 80px; */
+}
+
+#login input {
+  width: 200px;
+  height: 25px;
+  color: black;
+  background-color: #fff;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: 1px solid black;
+  padding-left: 15px;
+  outline: none;
+}
+
+#login button {
+  border: 2px solid #2d5997;
+  background-color: white;
+  text-align: center;
+  border-radius: 20px;
+  padding-top: 3px;
+  width: 70px;
+  height: 30px;
+  color: #424242;
+  outline: none;
+  transition: background-color 0.3s, border 0.3s, color 0.3s;  /* transition times between specified properties when mouse hovers over the button */
+}
+
+#login button:hover {  /* Change the background-color, border color and font color of the submit button when the mouse hovers over it */
+  border: 2px solid #6fb7ff;
+  background-color: #6fb7ff;
+  text-align: center;
+  border-radius: px;
+  padding-top: 3px;
+  width: 70px;
+  height: 30px;
+  color: white;
+}
+
+#login .button2 {
+  border: 2px solid #2d5997;
+  background-color: white;
+  text-align: center;
+  border-radius: 20px;
+  padding-top: 3px;
+  width: 110px;
+  height: 30px;
+  color: #424242;
+  outline: none;
+  transition: background-color 0.3s, border 0.3s, color 0.3s;  /* transition times between specified properties when mouse hovers over the button */
+}
+
+#login .button2:hover {  /* Change the background-color, border color and font color of the submit button when the mouse hovers over it */
+  border: 2px solid #6fb7ff;
+  background-color: #6fb7ff;
+  text-align: center;
+  border-radius: px;
+  padding-top: 3px;
+  width: 110px;
+  height: 30px;
+  color: white;
+}
+
+
+#login a{
+  text-decoration: none;
+  font-weight: bold;
+  color: #16397a;
+}
+
+
+/* Food Boxes */
+section#food-boxes div.container form#menu{
+  float: left;
+  width: 60%;
+}
+
+#food-boxes h1{
+  text-align: center;
+}
+
+#food-boxes img{
+  width: 90px;
+  height: 90px;
+}
+
+#food-boxes .check, #food-boxes .food {
+  float: left;
+}
+
+#food-boxes .check{
+  margin-top: 55px;
+  margin-right: 15px;
+}
+
+form#menu ul li.food-item{
+  text-align: center;
+  background-color: white;
+  height: 135px;
+  width: 160px;
+  padding-bottom: 10px;
+  padding-top: 5px;
+  float: left;
+  margin: 20px;
+  list-style: none;
+  box-shadow: 10px 10px 15px 1px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+
+figure{
+  margin: 0 5px 0 0;
+}
+
+/* Side-Bar */
+aside#sidebar-notification{
+  float: right;
+    margin-top: 20px;
+    margin-left: 0;
+    width: 30%;
+    border-left: 10px solid #f0b400;
+    border-radius: 5px;
+    background-color: white;
+    padding: 5px 0 5px 15px;
+}
+
+aside#sidebar-notification h3{
+  text-align: center;
+  margin: 0 0 5px 0;
+}
+
+aside ol li .pricetag{
+  font-style: italic;
+
+}
+
+aside button {
+  border: 2px solid #2d5997;
+  background-color: white;
+  text-align: center;
+  border-radius: 20px;
+  padding-top: 3px;
+  width: 100px;
+  height: 30px;
+  color: #424242;
+  outline: none;
+  transition: background-color 0.3s, border 0.3s, color 0.3s;  /* transition times between specified properties when mouse hovers over the button */
+}
+
+aside button:hover {  /* Change the background-color, border color and font color of the submit button when the mouse hovers over it */
+  border: 2px solid #6fb7ff;
+  background-color: #6fb7ff;
+  text-align: center;
+  border-radius: px;
+  padding-top: 3px;
+  width: 100px;
+  height: 30px;
+  color: white;
+}
+
+aside .make-order {
+  text-align: center;
+}
+
+
+
+
+/* Footer */
+footer{
+  padding: 20px;
+  margin-top: 20px;
+  color: #fff;
+  background-color: #d99300;
+  text-align: center;
+}

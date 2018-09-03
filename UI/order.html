@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="author" content="Chibueze Chima">
+  <meta name="keywords" content="fast food, restaurant">
+  <meta name="description" content="Fast-Food-Fast​ is a food delivery service app for a restaurant">
+  <title>Fast-Food-Fast | Make Orders</title>
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+  <header>
+
+    <div class="container">
+
+      <!-- Logos stay here -->
+      <div id="branding">
+        <a href="index.html"><h1>Fast-Food-<span class="fast">Fast</span><span class="exclaim">!</span></h1></a>
+      </div>
+
+      <!-- Navigation buttons stay here -->
+      <nav>
+        <ul>
+          <li class="right-border"><a href="index.html">Home</a></li>
+          <li class="right-border"><a href="sign-up.html">sign up</a></li>
+          <li class="right-border"><a href="sign-in.html">sign in</a></li>
+          <li id="current" class="right-border"><a href="order.html">order</a></li>
+          <li><a href="admin-page.html">Admin</a></li>
+        </ul>
+      </nav>
+
+    </div>
+  </header>
+
+  <!-- Food-Selection && Side-Bar Boxes Section -->
+  <section id="food-boxes">
+    <div class="container">
+
+      <!-- Food-Selection Form -->
+      <form action="#" id="menu">
+
+        <h1>Select Food From The Menu</h1>
+
+        <ul>
+
+          <!-- Akamu's Box -->
+          <li class="food-item">
+
+            <label for="akamu">Akamu</label>
+            <div class="check">
+              <input type="checkbox" onClick="checkFunc(event)" name="food" value="akamu">
+            </div>
+            <div class="food">
+              <figure class="food">
+                <img src=".\img\food-img\akamu.png" alt="Akamu">
+                <figcaption class="20">Price: $20.00</figcaption>
+
+              </figure>
+            </div>
+
+          </li>
+
+          <!-- Beef's Box -->
+          <li class="food-item">
+
+            <label for="beef">Beef</label>
+            <div class="check">
+              <input type="checkbox" onClick="checkFunc(event)" name="food" value="beef">
+            </div>
+            <div class="food">
+              <figure class="food">
+                <img src=".\img\food-img\beef.png" alt="beef">
+                <figcaption class="50">Price: $50.00</figcaption>
+              </figure>
+            </div>
+
+          </li>
+
+          <!-- Boiled-Egg's Box -->
+          <li class="food-item">
+
+            <label for="boiled-egg">Boiled-Egg</label>
+            <div class="check">
+              <input type="checkbox" onClick="checkFunc(event)" name="food" value="boiled-egg">
+            </div>
+            <div class="food">
+              <figure class="food">
+                <img src=".\img\food-img\boiled-egg.png" alt="boiled-egg">
+                <figcaption class="10">Price: $10.00</figcaption>
+              </figure>
+            </div>
+
+          </li>
+
+          <!-- Burger's Box -->
+          <li class="food-item">
+
+            <label for="burger">Burger</label>
+            <div class="check">
+              <input type="checkbox" onClick="checkFunc(event)" name="food" value="burger">
+            </div>
+            <div class="food">
+              <figure class="food">
+                <img src=".\img\food-img\burger.png" alt="burger">
+                <figcaption class="80">Price: $80.00</figcaption>
+              </figure>
+            </div>
+
+          </li>
+
+          <!-- Coffee's Box -->
+          <li class="food-item">
+
+            <label for="coffee">Coffee</label>
+            <div class="check">
+              <input type="checkbox" onClick="checkFunc(event)" name="food" value="coffee">
+            </div>
+            <div class="food">
+              <figure class="food">
+                <img src=".\img\food-img\coffee.png" alt="coffee">
+                <figcaption class="20">Price: $20.00</figcaption>
+              </figure>
+            </div>
+
+          </li>
+
+          <!-- Fried-Egg's Box -->
+          <li class="food-item">
+
+            <label for="fried-egg">Fried-Egg</label>
+            <div class="check">
+              <input type="checkbox" onClick="checkFunc(event)" name="food" value="fried-egg">
+            </div>
+            <div class="food">
+              <figure class="food">
+                <img src=".\img\food-img\fried-egg.png" alt="fried-egg">
+                <figcaption class="20">Price: $20.00</figcaption>
+              </figure>
+            </div>
+
+          </li>
+
+          <!-- Fried-Fish's Box -->
+          <li class="food-item">
+
+            <label for="fried-fish">Fried-Fish</label>
+            <div class="check">
+              <input type="checkbox" onClick="checkFunc(event)" name="food" value="fried-fish">
+            </div>
+            <div class="food">
+              <figure class="food">
+                <img src=".\img\food-img\fried-fish.png" alt="fried-fish">
+                <figcaption class="40">Price: $40.00</figcaption>
+              </figure>
+            </div>
+
+          </li>
+
+          <!-- Noodles's Box -->
+          <li class="food-item">
+
+            <label for="noodles">Noodles</label>
+            <div class="check">
+              <input type="checkbox" onClick="checkFunc(event)" name="food" value="noodles">
+            </div>
+            <div class="food">
+              <figure class="food">
+                <img src=".\img\food-img\noodles.png" alt="noodles">
+                <figcaption class="150">Price: $150.00</figcaption>
+              </figure>
+            </div>
+
+          </li>
+
+          <!-- Rice's Box -->
+          <li class="food-item">
+
+            <label for="rice">Rice</label>
+            <div class="check">
+              <input type="checkbox" onClick="checkFunc(event)" name="food" value="rice">
+            </div>
+            <div class="food">
+              <figure class="food">
+                <img src=".\img\food-img\rice.png" alt="rice">
+                <figcaption class="150">Price: $150.00</figcaption>
+              </figure>
+            </div>
+
+          </li>
+
+          <!-- Toasted-Bread's Box -->
+          <li class="food-item">
+
+            <label for="toasted-bread">Toasted-Bread</label>
+            <div class="check">
+              <input type="checkbox" onClick="checkFunc(event)" name="food" value="toasted-bread">
+            </div>
+            <div class="food">
+              <figure class="food">
+                <img src=".\img\food-img\toasted-bread.png" alt="toasted-bread">
+                <figcaption class="100">Price: $100.00</figcaption>
+              </figure>
+            </div>
+
+          </li>
+
+        </ul>
+
+      </form>
+
+      <aside id="sidebar-notification">
+        <h3>Your Orders:</h3>
+        <div class="notification">
+          <p class="comment">Ordered items will be listed here.</p>
+
+          <ol id="ordered-items">
+            <!-- <li class="Noodles"><strong>Noodles</strong>: <span class="pricetag">$150</span></li>
+            <li class="Burger"><strong>Burger</strong>: <span class="pricetag">$150</span></li>
+            <li class="Burger"><strong>Coffee</strong>: <span class="pricetag">$150</span></li>
+            <li class="Burger"><strong>Rice</strong>: <span class="pricetag">$150</span></li> -->
+          </ol>
+
+          <p class="total">Total Cost is <strong class="pricetag">$2000</strong>.</p>
+
+          <div class="make-order">
+            <button type="submit" onClick="submitFunc()" name="button">Send Order</button>
+          </div>
+
+
+
+
+
+        </div>
+      </aside>
+
+
+    </div>
+
+
+
+  </section>
+
+
+
+  <footer>
+    <p>Fast-Food-Fast, Copyright &copy;</p>
+  </footer>
+
+  <script src="program.js"></script>
+
+</body>
+
+</html>
