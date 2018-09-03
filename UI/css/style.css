@@ -267,12 +267,12 @@ aside#sidebar-notification h3{
   margin: 0 0 5px 0;
 }
 
-aside ol li .pricetag{
+aside .pricetag{
   font-style: italic;
 
 }
 
-aside button {
+aside button.active {
   border: 2px solid #2d5997;
   background-color: white;
   text-align: center;
@@ -285,7 +285,20 @@ aside button {
   transition: background-color 0.3s, border 0.3s, color 0.3s;  /* transition times between specified properties when mouse hovers over the button */
 }
 
-aside button:hover {  /* Change the background-color, border color and font color of the submit button when the mouse hovers over it */
+aside button.inactive {
+  border: 2px solid #d4d4d4;
+  background-color: white;
+  text-align: center;
+  border-radius: 20px;
+  padding-top: 3px;
+  width: 100px;
+  height: 30px;
+  color: #d4d4d4;
+  outline: none;
+}
+
+
+aside button.active:hover {  /* Change the background-color, border color and font color of the submit button when the mouse hovers over it */
   border: 2px solid #6fb7ff;
   background-color: #6fb7ff;
   text-align: center;
@@ -298,6 +311,11 @@ aside button:hover {  /* Change the background-color, border color and font colo
 
 aside .make-order {
   text-align: center;
+}
+
+aside .total-div {
+  text-align: center;
+  font-size: 20px;
 }
 
 
