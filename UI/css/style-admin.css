@@ -1,0 +1,189 @@
+div#introduction {
+  text-align: center;
+}
+
+button[name="create-food"]{
+  border: 2px solid #0a9221;
+  background-color: white;
+  text-align: center;
+  border-radius: 20px;
+  padding-top: 3px;
+  width: 120px;
+  height: 30px;
+  margin: 2px 0 2px 0;
+  color: #0a9221;
+  outline: none;
+  transition: background-color 0.3s, border 0.3s, color 0.3s;  /* transition times between specified properties when mouse hovers over the button */
+}
+
+button[name="create-food"]:hover {  /* Change the background-color, border color and font color of the submit button when the mouse hovers over it */
+  border: 2px solid #0a9221;
+  background-color: #0a9221;
+  text-align: center;
+  border-radius: 20px;
+  padding-top: 3px;
+  width: 120px;
+  height: 30px;
+  margin: 2px 0 2px 0;
+  color: white;
+}
+
+div#create-food {
+  margin-bottom: 15px;
+}
+
+
+
+/* Food-Box Manager */
+#editor-food-boxes img{
+  width: 90px;
+  height: 90px;
+}
+
+
+div.foods-editors div.food-entry {
+  width: 180px;
+  height: auto;
+  border-radius: 10px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  margin-left: 7px;
+  margin-bottom: 5px;
+  text-align: center;
+  background-color: #aaaaaa3d;
+  float: left;
+}
+
+div.foods-editors div.food {
+  text-align: center;
+  background-color: white;
+  height: 135px;
+  width: 150px;
+  padding-bottom: 10px;
+  padding-top: 5px;
+  float: left;
+  margin: 0 0 5px 15px;
+  box-shadow: 10px 10px 15px 1px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+
+
+button[name="edit"]  {
+  border: 2px solid #16397a;
+  background-color: white;
+  text-align: center;
+  border-radius: 20px;
+  padding-top: 3px;
+  width: 70px;
+  height: 30px;
+  margin: 2px 0 2px 0;
+  color: #16397a;
+  outline: none;
+  transition: background-color 0.3s, border 0.3s, color 0.3s;  /* transition times between specified properties when mouse hovers over the button */
+}
+
+button[name="edit"]:hover {  /* Change the background-color, border color and font color of the submit button when the mouse hovers over it */
+  border: 2px solid #16397a;
+  background-color: #16397a;
+  text-align: center;
+  border-radius: 20px;
+  padding-top: 3px;
+  width: 70px;
+  height: 30px;
+  margin: 2px 0 2px 0;
+  color: white;
+}
+
+button[name="delete"]  {
+  border: 2px solid #f00000;
+  background-color: white;
+  text-align: center;
+  border-radius: 20px;
+  padding-top: 3px;
+  width: 70px;
+  height: 30px;
+  margin: 2px 0 2px 0;
+  color: #f00000;
+  outline: none;
+  transition: background-color 0.3s, border 0.3s, color 0.3s;  /* transition times between specified properties when mouse hovers over the button */
+}
+
+button[name="delete"]:hover {  /* Change the background-color, border color and font color of the submit button when the mouse hovers over it */
+  border: 2px solid #f00000;
+  background-color: #f00000;
+  text-align: center;
+  border-radius: 20px;
+  padding-top: 3px;
+  width: 70px;
+  height: 30px;
+  margin: 2px 0 2px 0;
+  color: white;
+}
+
+div.input-div input {
+  width: 100px;
+  height: 25px;
+  color: black;
+  background-color: #fff;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: 1px solid black;
+  padding-left: 15px;
+  outline: none;
+}
+
+div.editor-inputs.hide {
+  display: none;
+}
+
+div.input-div button[type="button"] {
+  border: 2px solid #16397a;
+  background-color: white;
+  text-align: center;
+  border-radius: 20px;
+  padding-top: 3px;
+  width: 45px;
+  height: 30px;
+  margin: 2px 0 2px 0;
+  color: #16397a;
+  outline: none;
+  transition: background-color 0.3s, border 0.3s, color 0.3s;  /* transition times between specified properties when mouse hovers over the button */
+
+}
+
+div.input-div button[type="button"]:hover {  /* Change the background-color, border color and font color of the submit button when the mouse hovers over it */
+  border: 2px solid #16397a;
+  background-color: #16397a;
+  text-align: center;
+  border-radius: 20px;
+  padding-top: 3px;
+  width: 45px;
+  height: 30px;
+  margin: 2px 0 2px 0;
+  color: white;
+}
+
+div.foods-editors {
+  float: left;
+  width: 60%;
+}
+
+div.editor-inputs {
+  text-align: center;
+}
+
+div.label {
+    float: left;
+    margin-right: 5px;
+    margin-top: 2px;
+    width: 100px;
+    text-align: right;
+}
+
+div.input {
+  float: left;
+}
+
+aside div.input-div {
+  width: 250px;
+}

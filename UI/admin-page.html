@@ -10,6 +10,7 @@
   <meta name="description" content="Fast-Food-Fast​ is a food delivery service app for a restaurant">
   <title>Fast-Food-Fast | Web Administrator</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style-admin.css">
 
 </head>
 
@@ -39,84 +40,356 @@
 
 
   <!-- Food-Selection Boxes Section -->
-  <section id="food-boxes">
+  <section id="editor-food-boxes">
     <div class="container">
 
-      <form action="#" id="menu">
+      <div id="introduction">
+        <h1>Manage Food menu</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 
-        <h1>Select Food From The Menu</h1>
+        <div id="create-food">
+          <button type="button" name="create-food" onclick="goCreateFood()">Add New Food</button>
+          <button type="button" name="create-food" onclick="goManageOrder()">Manage Orders</button>
+        </div>
 
-        <ul>
+      </div>
 
-          <!-- Akamu's Box -->
-          <li class="food-item">
+      <!-- Append new Food Entries to this DIV (i.e class `foods-editors`) -->
+      <div class="foods-editors">
 
-            <label for="akamu">Akamu</label>
-            <div class="check">
-              <input type="checkbox" name="food" value="akamu">
-            </div>
-            <div class="food">
-              <figure class="food">
-                <img src=".\img\food-img\akamu.png" alt="Akamu">
-                <figcaption>Price: $20.00</figcaption>
-              </figure>
-            </div>
+        <!-- A Food Entry BEGINS __AKAMU-->
+        <div id="Akamu" class="food-entry">
 
-          </li>
+          <div class="food">
+            <label for="Akamu">Akamu</label>
+            <figure class="food">
+              <img src=".\img\food-img\akamu.png" alt="Akamu">
+              <figcaption class="20">Price: $20.00</figcaption>
+            </figure>
+          </div>
 
+          <div class="editors">
 
-
-        
-
-          <!-- Toasted-Bread's Box -->
-          <li class="food-item">
-
-            <label for="toasted-bread">Toasted-Bread</label>
-            <div class="check">
-              <input type="checkbox" name="food" value="toasted-bread">
-            </div>
-            <div class="food">
-              <figure class="food">
-                <img src=".\img\food-img\toasted-bread.png" alt="toasted-bread">
-                <figcaption>Price: $150.00</figcaption>
-              </figure>
+            <div class="edit-delete">
+              <button type="button" name="edit" onclick="unHideEditor(event)">Edit</button>
+              <button type="button" name="delete" onclick="deleteFood(event)">Delete</button>
             </div>
 
-          </li>
+            <div class="editor-inputs hide">
+              <div class="input-div">
+                <input type="text" name="name" value="" placeholder="Food's name:">
+                <button type="button" name="button" onclick="reName(event)">Save</button>
+              </div>
 
+              <div class="input-div">
+                <input type="number" name="price" min="0" placeholder="Food's price:">
+                <button type="button" name="button" onclick="rePrice(event)">Save</button>
+              </div>
 
+              <div class="input-div">
+                <input type="text" name="image" value="" accept="image/jpeg,image/x-png,image/gif" placeholder="Image URL:">
+                <button type="button" name="button" onclick="reImage(event)">Save</button>
+              </div>
 
+              <div class="input-div">
 
+                <div class="Add-food">
+                  <button type="button" name="button" onclick="hideEditor(event)">Exit</button>
+                </div>
 
+              </div>
 
-
-
-
-        </ul>
-
-
-
-
-
-        <!-- <div class="food-item">
-
-            <label for="akamu">Akamu</label><br>
-            <div class="check-food">
-              <div class="check"><input type="checkbox" name="food" value="akamu"></div>
-              <div class="food"><img src=".\img\food-img\akamu.png" alt="Akamu"></div>
             </div>
 
-          </div> -->
+          </div>
 
+        </div>
+        <!-- A Food Entry ENDS __AKAMU -->
 
+        <!-- A Food Entry BEGINS -->
+        <div id="Akamu" class="food-entry">
 
-      </form>
+          <div class="food">
+            <label for="Akamu">Akamu</label>
+            <figure class="food">
+              <img src=".\img\food-img\akamu.png" alt="Akamu">
+              <figcaption class="20">Price: $20.00</figcaption>
+            </figure>
+          </div>
 
+          <div class="editors">
 
+            <div class="edit-delete">
+              <button type="button" name="edit" onclick="unHideEditor(event)">Edit</button>
+              <button type="button" name="delete" onclick="deleteFood(event)">Delete</button>
+            </div>
 
+            <div class="editor-inputs hide">
+              <div class="input-div">
+                <input type="text" name="name" value="" placeholder="Food's name:">
+                <button type="button" name="button" onclick="reName(event)">Save</button>
+              </div>
 
+              <div class="input-div">
+                <input type="number" name="price" min="0" placeholder="Food's price:">
+                <button type="button" name="button" onclick="rePrice(event)">Save</button>
+              </div>
 
+              <div class="input-div">
+                <input type="text" name="image" value="" accept="image/jpeg,image/x-png,image/gif" placeholder="Image URL:">
+                <button type="button" name="button" onclick="reImage(event)">Save</button>
+              </div>
 
+              <div class="input-div">
+
+                <div class="Add-food">
+                  <button type="button" name="button" onclick="hideEditor(event)">Exit</button>
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+        <!-- A Food Entry ENDS  -->
+
+        <!-- A Food Entry BEGINS -->
+        <div id="Akamu" class="food-entry">
+
+          <div class="food">
+            <label for="Akamu">Akamu</label>
+            <figure class="food">
+              <img src=".\img\food-img\akamu.png" alt="Akamu">
+              <figcaption class="20">Price: $20.00</figcaption>
+            </figure>
+          </div>
+
+          <div class="editors">
+
+            <div class="edit-delete">
+              <button type="button" name="edit" onclick="unHideEditor(event)">Edit</button>
+              <button type="button" name="delete" onclick="deleteFood(event)">Delete</button>
+            </div>
+
+            <div class="editor-inputs hide">
+              <div class="input-div">
+                <input type="text" name="name" value="" placeholder="Food's name:">
+                <button type="button" name="button" onclick="reName(event)">Save</button>
+              </div>
+
+              <div class="input-div">
+                <input type="number" name="price" min="0" placeholder="Food's price:">
+                <button type="button" name="button" onclick="rePrice(event)">Save</button>
+              </div>
+
+              <div class="input-div">
+                <input type="text" name="image" value="" accept="image/jpeg,image/x-png,image/gif" placeholder="Image URL:">
+                <button type="button" name="button" onclick="reImage(event)">Save</button>
+              </div>
+
+              <div class="input-div">
+
+                <div class="Add-food">
+                  <button type="button" name="button" onclick="hideEditor(event)">Exit</button>
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+        <!-- A Food Entry ENDS  -->
+
+        <!-- A Food Entry BEGINS -->
+        <div id="Akamu" class="food-entry">
+
+          <div class="food">
+            <label for="Akamu">Akamu</label>
+            <figure class="food">
+              <img src=".\img\food-img\akamu.png" alt="Akamu">
+              <figcaption class="20">Price: $20.00</figcaption>
+            </figure>
+          </div>
+
+          <div class="editors">
+
+            <div class="edit-delete">
+              <button type="button" name="edit" onclick="unHideEditor(event)">Edit</button>
+              <button type="button" name="delete" onclick="deleteFood(event)">Delete</button>
+            </div>
+
+            <div class="editor-inputs hide">
+              <div class="input-div">
+                <input type="text" name="name" value="" placeholder="Food's name:">
+                <button type="button" name="button" onclick="reName(event)">Save</button>
+              </div>
+
+              <div class="input-div">
+                <input type="number" name="price" min="0" placeholder="Food's price:">
+                <button type="button" name="button" onclick="rePrice(event)">Save</button>
+              </div>
+
+              <div class="input-div">
+                <input type="text" name="image" value="" accept="image/jpeg,image/x-png,image/gif" placeholder="Image URL:">
+                <button type="button" name="button" onclick="reImage(event)">Save</button>
+              </div>
+
+              <div class="input-div">
+
+                <div class="Add-food">
+                  <button type="button" name="button" onclick="hideEditor(event)">Exit</button>
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+        <!-- A Food Entry ENDS  -->
+
+        <!-- A Food Entry BEGINS -->
+        <div id="Akamu" class="food-entry">
+
+          <div class="food">
+            <label for="Akamu">Akamu</label>
+            <figure class="food">
+              <img src=".\img\food-img\akamu.png" alt="Akamu">
+              <figcaption class="20">Price: $20.00</figcaption>
+            </figure>
+          </div>
+
+          <div class="editors">
+
+            <div class="edit-delete">
+              <button type="button" name="edit" onclick="unHideEditor(event)">Edit</button>
+              <button type="button" name="delete" onclick="deleteFood(event)">Delete</button>
+            </div>
+
+            <div class="editor-inputs hide">
+              <div class="input-div">
+                <input type="text" name="name" value="" placeholder="Food's name:">
+                <button type="button" name="button" onclick="reName(event)">Save</button>
+              </div>
+
+              <div class="input-div">
+                <input type="number" name="price" min="0" placeholder="Food's price:">
+                <button type="button" name="button" onclick="rePrice(event)">Save</button>
+              </div>
+
+              <div class="input-div">
+                <input type="text" name="image" value="" accept="image/jpeg,image/x-png,image/gif" placeholder="Image URL:">
+                <button type="button" name="button" onclick="reImage(event)">Save</button>
+              </div>
+
+              <div class="input-div">
+
+                <div class="Add-food">
+                  <button type="button" name="button" onclick="hideEditor(event)">Exit</button>
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+        <!-- A Food Entry ENDS  -->
+
+        <!-- A Food Entry BEGINS -->
+        <div id="Akamu" class="food-entry">
+
+          <div class="food">
+            <label for="Akamu">Akamu</label>
+            <figure class="food">
+              <img src=".\img\food-img\akamu.png" alt="Akamu">
+              <figcaption class="20">Price: $20.00</figcaption>
+            </figure>
+          </div>
+
+          <div class="editors">
+
+            <div class="edit-delete">
+              <button type="button" name="edit" onclick="unHideEditor(event)">Edit</button>
+              <button type="button" name="delete" onclick="deleteFood(event)">Delete</button>
+            </div>
+
+            <div class="editor-inputs hide">
+              <div class="input-div">
+                <input type="text" name="name" value="" placeholder="Food's name:">
+                <button type="button" name="button" onclick="reName(event)">Save</button>
+              </div>
+
+              <div class="input-div">
+                <input type="number" name="price" min="0" placeholder="Food's price:">
+                <button type="button" name="button" onclick="rePrice(event)">Save</button>
+              </div>
+
+              <div class="input-div">
+                <input type="text" name="image" value="" accept="image/jpeg,image/x-png,image/gif" placeholder="Image URL:">
+                <button type="button" name="button" onclick="reImage(event)">Save</button>
+              </div>
+
+              <div class="input-div">
+
+                <div class="Add-food">
+                  <button type="button" name="button" onclick="hideEditor(event)">Exit</button>
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+        <!-- A Food Entry ENDS  -->
+
+      </div>
+
+      <aside id="sidebar-notification">
+        <h3>Add New Food To The Menu:</h3>
+        <p class="comment red"></p>
+
+        <div class="editor-inputs">
+          <div class="input-div">
+
+            <div class="label"><label for="food-name">Food's Name:</label></div>
+            <div class="input"><input type="text" name="name" value="" placeholder="Food's name:"></div>
+
+          </div>
+
+          <div class="input-div">
+
+            <div class="label"><label for="pricetag">Pricetag:</label></div>
+            <div class="input"><input type="number" name="price" min="0" placeholder="Food's price:"></div>
+
+          </div>
+
+          <div class="input-div">
+
+            <div class="label"><label for="img-url">Image URL:</label></div>
+            <div class="input"><input type="text" name="image" value="" accept="image/jpeg,image/x-png,image/gif" placeholder="Image URL:"></div>
+
+          </div>
+
+          <div class="input-div">
+
+            <div class="Add-food">
+              <button type="button" name="button" onclick="addFood()">Add</button>
+            </div>
+
+          </div>
+
+        </div>
+
+      </aside>
 
 
 
@@ -130,7 +403,7 @@
     <p>Fast-Food-Fast, Copyright &copy;</p>
   </footer>
 
-  <script src="program.js"></script>
+  <script src="program-admin.js"></script>
 
 </body>
 
