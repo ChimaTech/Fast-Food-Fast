@@ -159,10 +159,10 @@ function checkFunc(event) {
     orderList.appendChild(newOrder); // Appends this unique list item to the ordered list
     totalCost = user.total;
 
-
   }
 
 }
+
 
 /**
  * @description Submit Function -- Captures and registers `click` events on the `button`; as well as `submit` event on the `form`.

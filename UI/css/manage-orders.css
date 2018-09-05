@@ -1,3 +1,100 @@
-li {
-  
+div.list-manager.incoming-orders,
+div.list-manager.accepted-orders,
+div.list-manager.completed-orders {
+  float: left;
+  margin: 30px 10px 5px 10px;
+  width: 300px;
+  background-color: white;
+  box-shadow: 10px 10px 15px 1px rgba(0, 0, 0, 0.3);
+  border-radius: 0 0 5px 5px;
+}
+
+div#lists-managers li {
+  border: 1px solid #ababab;
+  margin: 5px 10px 10px 0;
+  padding: 1px 0 1px 2px;
+  border-radius: 2px;
+}
+
+div#lists-managers h3 {
+  text-align: center;
+  margin: 0;
+  color: white;
+}
+
+div#lists-managers button {
+  text-align: center;
+  border-radius: 20px;
+  padding-top: 3px;
+  height: 28px;
+  margin: 2px 3px 0 5px;
+  outline: none;
+}
+
+
+/* Accepted--Buttons */
+div.list-manager.incoming-orders button[name="accept"] {
+  width: 67px;
+background-color: white;
+border: 2px solid #0a9221;
+color: #0a9221;
+transition: background-color 0.3s, border 0.3s, color 0.3s;  /* transition times between specified properties when mouse hovers over the button */
+}
+
+div.list-manager.incoming-orders button[name="accept"]:hover {
+  width: 67px;
+background-color: #0a9221;
+border: 2px solid #0a9221;
+color: white;
+transition: background-color 0.3s, border 0.3s, color 0.3s;  /* transition times between specified properties when mouse hovers over the button */
+}
+
+
+/* Declined--Buttons */
+div.list-manager.incoming-orders button[name="decline"] {
+  width: 67px;
+background-color: white;
+border: 2px solid #f00000;
+color: #f00000;
+transition: background-color 0.3s, border 0.3s, color 0.3s;  /* transition times between specified properties when mouse hovers over the button */
+}
+
+div.list-manager.incoming-orders button[name="decline"]:hover {
+  width: 67px;
+background-color: #f00000;
+border: 2px solid #f00000;
+color: white;
+transition: background-color 0.3s, border 0.3s, color 0.3s;  /* transition times between specified properties when mouse hovers over the button */
+}
+
+
+/* Completed--Buttons */
+div.list-manager.accepted-orders button[name="complete"] {
+  width: 80px;
+background-color: white;
+border: 2px solid #16397a;
+color: #16397a;
+transition: background-color 0.3s, border 0.3s, color 0.3s;  /* transition times between specified properties when mouse hovers over the button */
+}
+
+div.list-manager.accepted-orders button[name="complete"]:hover {
+  width: 80px;
+background-color: #16397a;
+border: 2px solid #16397a;
+color: white;
+transition: background-color 0.3s, border 0.3s, color 0.3s;  /* transition times between specified properties when mouse hovers over the button */
+}
+
+
+/* List Tiles Background Colors */
+div.list-manager.incoming-orders h3 {
+  background-color: #de5d5d;
+}
+
+div.list-manager.accepted-orders h3 {
+  background-color: #3db378;
+}
+
+div.list-manager.completed-orders h3 {
+  background-color: #3291f0;
 }

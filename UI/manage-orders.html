@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="author" content="Chibueze Chima">
   <meta name="keywords" content="fast food, restaurant">
@@ -11,6 +11,7 @@
   <title>Fast-Food-Fast | Web Admin -- Orders Manager</title>
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/manage-orders.css">
+  <link rel="stylesheet" href="css/responsive.css">
 
 </head>
 
@@ -38,64 +39,92 @@
     </div>
   </header>
 
-
-  <!-- Food-Selection Boxes Section -->
+  <!-- Orders Management Section -->
   <section id="editor-food-boxes">
     <div class="container">
 
       <div id="lists-managers">
 
-        <!-- Incoming Orders Manager-->
+        <!-- Begin Incoming Orders Manager-->
         <div class="list-manager incoming-orders">
 
-          <h2>Incoming Orders.</h2>
+          <h3>Incoming Orders.</h3>
 
           <ol class="list">
 
             <li>
-              Client A order. <button type="button" name="accept">Accept</button><button type="button" name="decline">Decline</button>
+              <span>Client A order.</span><button type="button" name="accept" onclick="acceptFunc(event)">Accept</button><button type="button" name="decline" onclick="declineFunc(event)">Decline</button>
             </li>
 
             <li>
-              Client A order. <button type="button" name="accept">Accept</button><button type="button" name="decline">Decline</button>
+              <span>Client B order.</span><button type="button" name="accept" onclick="acceptFunc(event)">Accept</button><button type="button" name="decline" onclick="declineFunc(event)">Decline</button>
             </li>
 
             <li>
-              Client A order. <button type="button" name="accept">Accept</button><button type="button" name="decline">Decline</button>
+              <span>Client C order.</span><button type="button" name="accept" onclick="acceptFunc(event)">Accept</button><button type="button" name="decline" onclick="declineFunc(event)">Decline</button>
+            </li>
+
+            <li>
+              <span>Client D order.</span><button type="button" name="accept" onclick="acceptFunc(event)">Accept</button><button type="button" name="decline" onclick="declineFunc(event)">Decline</button>
+            </li>
+
+            <li>
+              <span>Client E order.</span><button type="button" name="accept" onclick="acceptFunc(event)">Accept</button><button type="button" name="decline" onclick="declineFunc(event)">Decline</button>
+            </li>
+
+            <li>
+              <span>Client F order.</span><button type="button" name="accept" onclick="acceptFunc(event)">Accept</button><button type="button" name="decline" onclick="declineFunc(event)">Decline</button>
+            </li>
+
+          </ol>
+
+        </div>
+        <!-- End Incoming Orders Manager -->
+
+        <!-- Begin Accepted Orders Manager-->
+        <div class="list-manager accepted-orders">
+
+          <h3>Accepted Orders.</h3>
+
+          <ol class="list">
+
+            <li>
+              <span>Client A order.</span><button type="button" name="complete" onclick="completeFunc(event)">Complete</button>
+            </li>
+
+            <li>
+              <span>Client A order.</span><button type="button" name="complete" onclick="completeFunc(event)">Complete</button>
             </li>
 
 
           </ol>
 
+        </div>
+        <!-- End Accepted Orders Manager -->
+
+
+        <!-- Begin Completed Orders Manager-->
+        <div class="list-manager completed-orders">
+
+          <h3>Completed Orders.</h3>
+
+          <ol class="list">
+
+          </ol>
 
         </div>
-
-
-
-
-
-
-
-
+        <!-- End Completed Orders Manager -->
 
       </div>
 
-
-
-
-
-
     </div>
   </section>
-
-
-
 
   <footer>
     <p>Fast-Food-Fast, Copyright &copy;</p>
   </footer>
 
-  <script src="program-admin.js"></script>
+  <script src="program-manage-orders.js"></script>
 
 </body>
 

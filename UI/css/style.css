@@ -84,7 +84,7 @@ header li {
 
 
 /* Navigation */
-nav {
+header nav {
   float: right;
   margin-top: 45px;
 }
@@ -137,7 +137,6 @@ nav ul li:hover {
 #login form {
   border-radius: 30px;
   background-color: #fff;
-  /* width: 80px; */
 }
 
 #login input {
@@ -199,7 +198,6 @@ nav ul li:hover {
   height: 30px;
   color: white;
 }
-
 
 #login a{
   text-decoration: none;
@@ -269,7 +267,6 @@ aside#sidebar-notification h3{
 
 aside .pricetag{
   font-style: italic;
-
 }
 
 aside button.active {
@@ -297,7 +294,6 @@ aside button.inactive {
   outline: none;
 }
 
-
 aside button.active:hover {  /* Change the background-color, border color and font color of the submit button when the mouse hovers over it */
   border: 2px solid #6fb7ff;
   background-color: #6fb7ff;
@@ -317,11 +313,6 @@ aside .total-div {
   text-align: center;
   font-size: 20px;
 }
-
-/* Editor Buttons */
-
-
-
 
 
 /* Footer */

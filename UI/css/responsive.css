@@ -1,0 +1,86 @@
+/* Media Queries */
+@media (max-width: 768px) {
+  section#food-boxes div.container form#menu,
+  header nav,
+  header li,
+  header #branding,
+  header #branding a {
+    float: none;
+    text-align: center;
+    width: 100%;
+    }
+
+  form#menu ul li.food-item {
+    float: none;
+    margin: 20px 0 20px 55px;
+
+  }
+
+  header{
+    padding-bottom: 20px;
+  }
+
+  nav ul li a {
+    font-size: 12px;
+  }
+
+  form#login-form {
+    border-radius: 5px;
+  }
+
+  aside#sidebar-notification {
+    float: none;
+    width: 100%;
+  }
+
+  .comment {
+    float: left;
+    width: 260px;
+  }
+
+  div.foods-editors div.food,
+  div.foods-editors,
+  div.foods-editors div.food-entry {
+    float: none;
+  }
+
+  div.foods-editors div.food-entry {
+    margin-left: 40px;
+  }
+
+  aside#sidebar-notification h3 {
+    /* border: 1px solid blue; */
+    margin: 1px 35px 0 0;
+  }
+
+  div.label {
+    /* border: 1px solid green; */
+    float: none;
+    width: 100%;
+    text-align: center;
+  }
+
+  div.input {
+    float: none;
+    width: 100%;
+  }
+
+  div.input input {
+    width: 90%;
+    height: 35px;
+  }
+
+  div.list-manager.incoming-orders,
+  div.list-manager.accepted-orders,
+  div.list-manager.completed-orders {
+  float: none;
+  margin-left: 0;
+  font-size: 15px;
+  }
+
+  /* Showcase -- media-query */
+  #showcase h1{
+    margin-top: 40px;
+  }
+
+}
