@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="author" content="Chibueze Chima">
+  <meta name="keywords" content="fast food, restaurant">
+  <meta name="description" content="Fast-Food-Fast​ is a food delivery service app for a restaurant">
+  <title>Fast-Food-Fast | Web Admin -- Orders Manager</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/manage-orders.css">
+  <link rel="stylesheet" href="css/responsive.css">
+
+</head>
+
+<body>
+
+  <header>
+    <div class="container">
+
+      <!-- Logos stay here -->
+      <div id="branding">
+        <a href="index.html"><h1>Fast-Food-<span class="fast">Fast</span><span class="exclaim">!</span></h1></a>
+      </div>
+
+      <!-- Navigation buttons stay here -->
+      <nav>
+        <ul>
+          <li class="right-border"><a href="index.html">Home</a></li>
+          <li class="right-border"><a href="sign-up.html">sign up</a></li>
+          <li class="right-border"><a href="sign-in.html">sign in</a></li>
+          <li class="right-border"><a href="order.html">order</a></li>
+          <li id="current"><a href="admin-page.html">Admin</a></li>
+        </ul>
+      </nav>
+
+    </div>
+  </header>
+
+  <!-- Orders Management Section -->
+  <section id="editor-food-boxes">
+    <div class="container">
+
+      <div id="lists-managers">
+
+        <!-- Begin Incoming Orders Manager-->
+        <div class="list-manager incoming-orders">
+
+          <h3>Incoming Orders.</h3>
+
+          <ol class="list">
+
+            <li>
+              <span>Client A order.</span><button type="button" name="accept" onclick="acceptFunc(event)">Accept</button><button type="button" name="decline" onclick="declineFunc(event)">Decline</button>
+            </li>
+
+            <li>
+              <span>Client B order.</span><button type="button" name="accept" onclick="acceptFunc(event)">Accept</button><button type="button" name="decline" onclick="declineFunc(event)">Decline</button>
+            </li>
+
+            <li>
+              <span>Client C order.</span><button type="button" name="accept" onclick="acceptFunc(event)">Accept</button><button type="button" name="decline" onclick="declineFunc(event)">Decline</button>
+            </li>
+
+            <li>
+              <span>Client D order.</span><button type="button" name="accept" onclick="acceptFunc(event)">Accept</button><button type="button" name="decline" onclick="declineFunc(event)">Decline</button>
+            </li>
+
+            <li>
+              <span>Client E order.</span><button type="button" name="accept" onclick="acceptFunc(event)">Accept</button><button type="button" name="decline" onclick="declineFunc(event)">Decline</button>
+            </li>
+
+            <li>
+              <span>Client F order.</span><button type="button" name="accept" onclick="acceptFunc(event)">Accept</button><button type="button" name="decline" onclick="declineFunc(event)">Decline</button>
+            </li>
+
+          </ol>
+
+        </div>
+        <!-- End Incoming Orders Manager -->
+
+        <!-- Begin Accepted Orders Manager-->
+        <div class="list-manager accepted-orders">
+
+          <h3>Accepted Orders.</h3>
+
+          <ol class="list">
+
+            <li>
+              <span>Client A order.</span><button type="button" name="complete" onclick="completeFunc(event)">Complete</button>
+            </li>
+
+            <li>
+              <span>Client A order.</span><button type="button" name="complete" onclick="completeFunc(event)">Complete</button>
+            </li>
+
+
+          </ol>
+
+        </div>
+        <!-- End Accepted Orders Manager -->
+
+
+        <!-- Begin Completed Orders Manager-->
+        <div class="list-manager completed-orders">
+
+          <h3>Completed Orders.</h3>
+
+          <ol class="list">
+
+          </ol>
+
+        </div>
+        <!-- End Completed Orders Manager -->
+
+      </div>
+
+    </div>
+  </section>
+
+  <footer>
+    <p>Fast-Food-Fast, Copyright &copy;</p>
+  </footer>
+
+  <script src="program-manage-orders.js"></script>
+
+</body>
+
+</html>
